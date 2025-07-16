@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif;
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+}
+.main{
+    width: 100%;
+    height: 100%;
+}
+#header {
+    width: 100%;
+    height: 15%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    color: #0576cc;
+    justify-content: space-around;
+    position: fixed;
+}
+#fakeheader{
+    width: 100%;
+    height: 15%;
+    background-color: white;
+}
+#logo{
+    width: 68px;
+    object-fit: cover;
+    margin-left: 10px;
+}
+.nvbar{
+    margin: 20px;
+    color: #012e60;
+}
+.nvbar:hover{
+    color: #0576cc;
+    cursor: pointer;
+}
+#ctbtn{
+    color: #012e60;
+}
+#ctbtn:hover{
+    color: #0576cc;
+}
+#icon{
+    color: #012e60;
+}
+#search{
+    width: 50%;
+    height: 100%;
+    border-radius: 50%;
+    margin-right: 10px;
+    padding: 10px;
+}
+#search:hover{
+    background-color: #cddeec ;
+}
+#global{
+    width: 50%;
+    height: 100%;
+    border-radius: 50%;
+    margin-right: 10px;
+    padding: 10px;
+}
+#global:hover{
+    background-color: #cddeec ;
+}
+#icon:hover{
+    color: #0576cc;
+
+}
+#login{
+    display: flex;
+    padding: 7px;
+    border-radius: 20px;
+    color: #012e60 ;
+}
+#login:hover{
+background-color: #cddeec ;
+color: #0576cc;
+}
+#try{
+    background-color: green;
+    padding: 10px 20px;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+#try:hover{
+    background-color: rgb(6, 56, 6);
+    cursor: pointer;
+}
+#strip{
+    width: 100%;
+    height: 9.5%;
+    background-color: #130074;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#content{
+    width: 100%;
+    height: 75.5%;
+    display: flex;
+    background-image: url(1.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#box1{
+    margin: 30px;
+    width: 50%;
+}
+#btn1{
+    background-color: #0576cc; 
+    color: white; 
+    padding: 15px 30px; 
+    margin-right: 80px; 
+    border-radius: 5px; 
+    text-align: center;
+}
+#btn1:hover{
+    background-color: #012e60;
+}
+#btn2{
+    border: 3px solid #0576cc;
+    padding: 15px 30px; 
+    color: #0576cc; 
+    border-radius: 5px;
+}
+#btn2:hover{
+    color: #012e60;
+    border-color: #012e60;
+}
+#box2{
+    width: 50%;
+}
+#video{
+    display: flex;
+    margin-top: 50px;
+    /* margin-left: 30px; */
+    margin-bottom: 60px;
+    justify-content: center;
+    border-radius: 20px;
+    width: 614px;
+    height: 346px;
+}
+#page2{
+    width: 100%;
+    height: 85%;
+    background-color: rgb(255, 255, 255);
+}
+#text2{
+    color: #012e60;
+}
+#content1{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 20%;
+    align-items: center;
+}
+#content2{
+    width: 100%;
+    height: 70%;
+    display: flex;
+}
+.card{
+    width: 20%;
+    height: 90%;
+    margin-left: 55px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 0px rgb(230, 228, 228);
+}
+.upimg img{
+    object-fit: cover;
+    width: 100%;
+    border-radius: 10px;
+}
+.lower{
+    margin-top: 40px;
+    margin-left: 30px;
+}
+.lwtxt{
+    color: #012e60;
+}
+.lwtxt:hover{
+    color: #0576cc;
+    cursor: pointer;
+}
+.lwtxt a{
+    color: #012e60;
+}
+.lwtxt a:hover{
+    color: #0576cc;
+    text-decoration: none;
+    cursor: pointer;
+}
+.lower p {
+    margin-top: 15px; 
+    margin-bottom: 15px; 
+    font-size: 13px;
+}
+
+/* chat gpt css start here */
+
+
+/* ============================= */
+/*   RESPONSIVE DESIGN STARTS   */
+/* ============================= */
+
+@media (max-width: 1024px) {
+    #header {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    #content {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        background-size: cover;
+    }
+
+    #box1, #box2 {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    #video {
+        width: 90vw;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    #btn {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    #btn1, #btn2 {
+        margin: 0;
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .nvbar, #ctbtn, #icon, #login, #try {
+        font-size: 14px;
+    }
+
+    #strip h4 {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #content1 h1 {
+        font-size: 1.5em;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    #content2 {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .card {
+        width: 90%;
+        margin: 20px 0;
+    }
+
+    .lower {
+        margin-left: 15px;
+        margin-top: 20px;
+    }
+
+    .lwtxt {
+        font-size: 1em;
+    }
+
+    #header {
+        position: relative;
+    }
+
+    #fakeheader {
+        display: none;
+    }
+
+    #strip {
+        flex-direction: column;
+        padding: 10px;
+        height: auto;
+    }
+
+    #strip p, #strip h4 {
+        font-size: 13px;
+    }
+
+    video {
+        width: 100%;
+        height: auto;
+    }
+}
+/* hamsburger btn start */
+
+#menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #012e60;
+}
+
+#nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    #menu-toggle {
+        display: block;
+    }
+
+    #nav-links {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: white;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        z-index: 1000;
+        box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    }
+
+    #nav-links.show {
+        display: flex;
+    }
+
+    .nvbar h4 {
+        padding: 10px 0;
+    }
+}
+
+
